@@ -1,4 +1,4 @@
-class Api::V1::SessionsController < ApiController
+class Api::V1::SessionsController < Api::V1::ApiController
   skip_before_action :require_login, only: [:create], raise: false
 
   def create
@@ -8,6 +8,7 @@ class Api::V1::SessionsController < ApiController
     else
       render_unauthorized("Error with your login or password")
     end
+  end 
 
     def destroy
       logout

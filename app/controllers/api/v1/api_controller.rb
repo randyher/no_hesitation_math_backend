@@ -5,7 +5,7 @@ class Api::V1::ApiController < ApplicationController
   end
 
   def current_user
-    @current_user ||= authenticate_token
+    current_user ||= authenticate_token
   end
 
   protected

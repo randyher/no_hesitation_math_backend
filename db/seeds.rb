@@ -13,4 +13,12 @@ ActiveRecord::Base.connection.tables.each do |t|
   ActiveRecord::Base.connection.reset_pk_sequence!(t)
 end
 
-User.create(username: "RandyHer", password_digest:"123456", avatar: "Yo" auth_token: "111")
+User.create(username: "RandyHer", password:"123456")
+User.create(username: "RegisHer", password:"123456")
+
+Game.create(user_id: 1, score:"21")
+Game.create(user_id: 1, score:"22")
+Game.create(user_id: 1, score:"21")
+
+Game.create(user_id: 2, score:"21")
+Game.create(user_id: 2, score:"24")

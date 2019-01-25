@@ -1,9 +1,10 @@
 class User < ApplicationRecord
 
-  has_many :games
+  # has_many :games
   has_secure_password
-  validates :username, uniqueness: { case_sensitive: false }
   has_secure_token :auth_token
+  
+  # validates :username, uniqueness: { case_sensitive: false }
 
   def invalidate_token
     self.update_columns(auth_token: nil)

@@ -1,24 +1,28 @@
-class Api::V1::UsersController < ApplicationController
+class Api::V1::UsersController < Api::V1::ApiController
+
+  before_action :require_login, except: [:create]
 
 
   def index
-    @users = User.all
-    render json: @users
+    users = User.all
+    render json: users
   end
 
 
   def create
-    @user = User.create(user_params)
-    if @user.valid?
-      render json: { user: UserSerializer.new(@user) }, status: :created
-    else
-      render json: { error: 'failed to create user' }, status: :not_acceptable
-    end
+    user = User.create(user_params)
+    render json: { token: user.auth_token }
+  end
+
+  def profile
+    user = User.find_by_auth_token!(request_headers[:token])
+    render json: { user: { username: user.username}}
   end
 
   private
+
   def user_params
-    params.require(:user).permit(:username, :password, :bio, :avatar)
+    params.require(:user).permit(:username, :password)
   end
 
 
