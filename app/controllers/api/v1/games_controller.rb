@@ -18,7 +18,7 @@ class Api::V1::GamesController < Api::V1::ApiController
       }
     else
       render json: {message: "No Game!"}
-    end 
+    end
   end
 
   def show
@@ -39,7 +39,7 @@ class Api::V1::GamesController < Api::V1::ApiController
   private
 
     def game_params
-      params.permit(:user_id, :score)
+    params.require(:game).permit(:user_id, :score, :time_remaining)
     end
 
     def find_game

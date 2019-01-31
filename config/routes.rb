@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  resources :games
-  # resources :users
+
+
 
 
   namespace :api do
