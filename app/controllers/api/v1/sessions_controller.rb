@@ -8,7 +8,7 @@ class Api::V1::SessionsController < Api::V1::ApiController
     else
       render_unauthorized("Error with your login or password")
     end
-  end 
+  end
 
     def destroy
       logout
@@ -19,6 +19,7 @@ class Api::V1::SessionsController < Api::V1::ApiController
 
     def send_token_for_valid_login_of(user)
       render json: {token: user.auth_token}
+      
     end
 
     def allow_token_to_be_used_only_once_for(user)
