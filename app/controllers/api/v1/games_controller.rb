@@ -1,5 +1,6 @@
-class Api::V1::GamesController < ApplicationController
+class Api::V1::GamesController < Api::V1::ApiController
 
+  before_action :require_login, except: [:index, :show]
   before_action :find_game, only: [:update, :show]
 
   def index
@@ -7,7 +8,21 @@ class Api::V1::GamesController < ApplicationController
     render json: @games
   end
 
+  def create
+    game = Game.new(game_params)
+    game.user = current_user
+    if game.save
+      render json: {
+        message: "Ok",
+        game: game
+      }
+    else
+      render json: {message: "No Game!"}
+    end 
+  end
+
   def show
+    @game = Game.find(params[:id])
     render json: @game
   end
 
@@ -24,7 +39,7 @@ class Api::V1::GamesController < ApplicationController
   private
 
     def game_params
-      params.permit(:user_is, :score)
+      params.permit(:user_id, :score)
     end
 
     def find_game

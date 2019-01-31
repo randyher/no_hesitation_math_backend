@@ -1,9 +1,9 @@
 class User < ApplicationRecord
 
-  # has_many :games
+  has_many :games
   has_secure_password
   has_secure_token :auth_token
-  
+
   # validates :username, uniqueness: { case_sensitive: false }
 
   def invalidate_token

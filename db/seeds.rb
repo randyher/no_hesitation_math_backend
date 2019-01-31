@@ -16,9 +16,9 @@ end
 User.create(username: "RandyHer", password:"123456")
 User.create(username: "RegisHer", password:"123456")
 
-Game.create(user_id: 1, score:"21")
-Game.create(user_id: 1, score:"22")
-Game.create(user_id: 1, score:"21")
+Game.create(user_id: 1, score:"21", time_remaining: 30)
+Game.create(user_id: 1, score:"22", time_remaining: 23)
+Game.create(user_id: 1, score:"21", time_remaining: 12)
 
-Game.create(user_id: 2, score:"21")
-Game.create(user_id: 2, score:"24")
+Game.create(user_id: 2, score:"21", time_remaining: 32)
+Game.create(user_id: 2, score:"24", time_remaining: 23)

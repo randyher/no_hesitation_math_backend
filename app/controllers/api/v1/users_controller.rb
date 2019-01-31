@@ -8,6 +8,11 @@ class Api::V1::UsersController < Api::V1::ApiController
     render json: users
   end
 
+  def show
+    uses = User.find(params[:id])
+    render json: user
+  end
+
 
   def create
     user = User.create(user_params)
@@ -15,8 +20,9 @@ class Api::V1::UsersController < Api::V1::ApiController
   end
 
   def profile
-    user = User.find_by_auth_token!(request_headers[:token])
-    render json: { user: { username: user.username}}
+    user = User.find_by_auth_token!(request.headers[:token])
+    user_games = user.games
+    render json: { user: { username: user.username}, games: user_games}
   end
 
   private
