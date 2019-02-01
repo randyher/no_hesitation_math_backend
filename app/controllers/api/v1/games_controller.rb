@@ -5,7 +5,7 @@ class Api::V1::GamesController < Api::V1::ApiController
 
   def index
     @games = Game.all
-    render json: @games
+    render json: @games.includes(:problems), include: ['problems']
   end
 
   def create
@@ -39,7 +39,7 @@ class Api::V1::GamesController < Api::V1::ApiController
   private
 
     def game_params
-    params.require(:game).permit(:user_id, :score, :time_remaining)
+    params.require(:game).permit(:user_id, :score, :time_remaining, :problems)
     end
 
     def find_game
