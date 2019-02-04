@@ -39,7 +39,7 @@ class Api::V1::GamesController < Api::V1::ApiController
   private
 
     def game_params
-    params.require(:game).permit(:user_id, :score, :time_remaining, :problems)
+    params.require(:game).permit(:user_id, :score, :time_remaining, :problems, :answers)
     end
 
     def find_game
