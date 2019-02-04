@@ -14,7 +14,7 @@ class Api::V1::GamesproblemsController < ApplicationController
   private
 
     def gp_params
-    params.require(:gamesproblem).permit(:game_id, :problem_id)
+    params.require(:gamesproblem).permit(:game_id, :problem_id, :answer)
     end
 
 end
