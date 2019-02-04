@@ -47,16 +47,26 @@ Problem.create(number_sentence: "10 + 10 =", problem_type: "Doubles Fact")
 
 Problem.create(number_sentence: "7 + 4 =", problem_type: "N/A")
 Problem.create(number_sentence: "7 + 6 =", problem_type: "N/A")
+Problem.create(number_sentence: "7 + 8 =", problem_type: "N/A")
+Problem.create(number_sentence: "7 + 9 =", problem_type: "N/A")
 
-Problem.create(number_sentence: "8 + 4 =", problem_type: "N/A")
 Problem.create(number_sentence: "8 + 3 =", problem_type: "N/A")
+Problem.create(number_sentence: "8 + 4 =", problem_type: "N/A")
 Problem.create(number_sentence: "8 + 6 =", problem_type: "N/A")
 Problem.create(number_sentence: "8 + 7 =", problem_type: "N/A")
+Problem.create(number_sentence: "8 + 9 =", problem_type: "N/A")
 
+Problem.create(number_sentence: "9 + 3 =", problem_type: "N/A")
 Problem.create(number_sentence: "9 + 4 =", problem_type: "N/A")
 Problem.create(number_sentence: "9 + 6 =", problem_type: "N/A")
 Problem.create(number_sentence: "9 + 7 =", problem_type: "N/A")
 Problem.create(number_sentence: "9 + 8 =", problem_type: "N/A")
+
+
+Problem.create(number_sentence: "10 + 7 =", problem_type: "N/A")
+
+Problem.create(number_sentence: "11 + 7 =", problem_type: "N/A")
+
 
 Gamesproblem.create(game_id: 1, problem_id: 1)
 Gamesproblem.create(game_id: 1, problem_id: 20)

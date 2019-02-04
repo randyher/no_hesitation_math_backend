@@ -5,7 +5,7 @@ class Api::V1::GamesController < Api::V1::ApiController
 
   def index
     @games = Game.all
-    render json: @games.includes(:problems), include: ['problems']
+    render json: @games
   end
 
   def create
