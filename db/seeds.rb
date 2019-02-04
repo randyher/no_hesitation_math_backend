@@ -18,12 +18,7 @@ end
 User.create(username: "RandyHer", password:"123456")
 User.create(username: "RegisHer", password:"123456")
 
-Game.create(user_id: 1, score:"21", time_remaining: 30)
-Game.create(user_id: 1, score:"22", time_remaining: 23)
-Game.create(user_id: 1, score:"21", time_remaining: 12)
 
-Game.create(user_id: 2, score:"21", time_remaining: 32)
-Game.create(user_id: 2, score:"24", time_remaining: 23)
 
 Problem.create(number_sentence: "1 + 9 =", problem_type: "Addition Tens Fact")
 Problem.create(number_sentence: "2 + 8 =", problem_type: "Addition Tens Fact")
@@ -87,10 +82,3 @@ Problem.create(number_sentence: "10 - 6 =", problem_type: "Subtraction Tens Fact
 Problem.create(number_sentence: "10 - 7 =", problem_type: "Subtraction Tens Fact")
 Problem.create(number_sentence: "10 - 8 =", problem_type: "Subtraction Tens Fact")
 Problem.create(number_sentence: "10 - 9 =", problem_type: "Subtraction Tens Fact")
-
-
-Gamesproblem.create(game_id: 1, problem_id: 1)
-Gamesproblem.create(game_id: 1, problem_id: 20)
-Gamesproblem.create(game_id: 1, problem_id: 13)
-Gamesproblem.create(game_id: 1, problem_id: 12)
-Gamesproblem.create(game_id: 1, problem_id: 10)
