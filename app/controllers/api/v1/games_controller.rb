@@ -1,7 +1,7 @@
 class Api::V1::GamesController < Api::V1::ApiController
 
   before_action :require_login, except: [:index, :show]
-  before_action :find_game, only: [:update, :show]
+  before_action :find_game, only: [:update, :show, :destroy]
 
   def index
     @games = Game.all
@@ -34,6 +34,14 @@ class Api::V1::GamesController < Api::V1::ApiController
     else
       render json: {errors: @game.errors.full_messages}, status: :unprocessable_entity
     end
+  end
+
+  def destroy
+
+    @game.destroy
+
+    @games = Game.all
+    render json: @games
   end
 
   private
