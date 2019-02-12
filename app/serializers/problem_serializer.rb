@@ -1,3 +1,3 @@
 class ProblemSerializer < ActiveModel::Serializer
-  attributes :id, :number_sentence, :problem_type
+  attributes :id, :number_sentence, :problem_type, :grade
 end

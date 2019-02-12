@@ -22,13 +22,13 @@ class Api::V1::UsersController < Api::V1::ApiController
   def profile
     user = User.find_by_auth_token!(request.headers[:token])
     user_games = user.games
-    render json: { user: { username: user.username}, games: user_games }
+    render json: { user: { username: user.username, grade: user.grade}, games: user_games }
   end
 
   private
 
   def user_params
-    params.require(:user).permit(:username, :password)
+    params.require(:user).permit(:username, :password, :grade)
   end
 
 
