@@ -1,3 +1,3 @@
 class GameSerializer < ActiveModel::Serializer
-  attributes :id, :score, :time_remaining, :problems, :answers
+  attributes :id, :score, :time_remaining, :game_type, :problems
 end

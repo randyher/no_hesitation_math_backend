@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2019_02_01_150137) do
     t.integer "user_id"
     t.integer "score"
     t.integer "time_remaining"
-    t.string "answers"
+    t.string "game_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
