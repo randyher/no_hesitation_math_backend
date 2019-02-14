@@ -36,14 +36,12 @@ Problem.create(number_sentence: "8 - 8 =", problem_type: "Subtraction Minus-Itse
 Problem.create(number_sentence: "9 - 9 =", problem_type: "Subtraction Minus-Itself", grade: "1st")
 
 
-Problem.create(number_sentence: "20 - 10 =", problem_type: "Subtraction Halving", grade: "2nd")
-Problem.create(number_sentence: "18 - 9 =", problem_type: "Subtraction Halving", grade: "2nd")
-Problem.create(number_sentence: "16 - 8 =", problem_type: "Subtraction Halving", grade: "2nd")
-Problem.create(number_sentence: "14 - 7 =", problem_type: "Subtraction Halving", grade: "2nd")
-Problem.create(number_sentence: "12 - 6 =", problem_type: "Subtraction Halving", grade: "2nd")
 
 Problem.create(number_sentence: "10 - 5 =", problem_type: "Subtraction Halving", grade: "1st")
 Problem.create(number_sentence: "8 - 4 =", problem_type: "Subtraction Halving", grade: "1st")
+Problem.create(number_sentence: "6 - 3 =", problem_type: "Subtraction Halving", grade: "1st")
+Problem.create(number_sentence: "4 - 2 =", problem_type: "Subtraction Halving", grade: "1st")
+
 
 Problem.create(number_sentence: "1 + 1 =", problem_type: "Addition Doubles Fact", grade: "1st")
 Problem.create(number_sentence: "2 + 2 =", problem_type: "Addition Doubles Fact", grade: "1st")
@@ -62,21 +60,14 @@ Problem.create(number_sentence: "7 + 8 =", problem_type: "Addition", grade: "1st
 
 Problem.create(number_sentence: "8 + 3 =", problem_type: "Addition", grade: "1st")
 Problem.create(number_sentence: "8 + 4 =", problem_type: "Addition", grade: "1st")
-Problem.create(number_sentence: "8 + 6 =", problem_type: "Addition", grade: "1st")
 Problem.create(number_sentence: "8 + 7 =", problem_type: "Addition", grade: "1st")
 Problem.create(number_sentence: "8 + 9 =", problem_type: "Addition", grade: "1st")
 
 Problem.create(number_sentence: "9 + 3 =", problem_type: "Addition", grade: "1st")
 Problem.create(number_sentence: "9 + 4 =", problem_type: "Addition", grade: "1st")
 Problem.create(number_sentence: "9 + 6 =", problem_type: "Addition", grade: "1st")
-Problem.create(number_sentence: "9 + 7 =", problem_type: "Addition", grade: "1st")
 Problem.create(number_sentence: "9 + 8 =", problem_type: "Addition", grade: "1st")
 
-Problem.create(number_sentence: "11 - 8 =", problem_type: "Subtraction", grade: "2nd")
-Problem.create(number_sentence: "13 - 8 =", problem_type: "Subtraction", grade: "2nd")
-Problem.create(number_sentence: "14 - 9 =", problem_type: "Subtraction", grade: "2nd")
-Problem.create(number_sentence: "16 - 9 =", problem_type: "Subtraction", grade: "2nd")
-Problem.create(number_sentence: "17 - 8 =", problem_type: "Subtraction", grade: "2nd")
 
 Problem.create(number_sentence: "10 - 1 =", problem_type: "Subtraction Tens Fact", grade: "1st")
 Problem.create(number_sentence: "10 - 2 =", problem_type: "Subtraction Tens Fact", grade: "1st")
@@ -92,6 +83,11 @@ Problem.create(number_sentence: "10 + 6 =", problem_type: "Addition Tens Fact", 
 Problem.create(number_sentence: "10 + 7 =", problem_type: "Addition Tens Fact", grade: "1st")
 Problem.create(number_sentence: "10 + 8 =", problem_type: "Addition Tens Fact", grade: "1st")
 Problem.create(number_sentence: "10 + 9 =", problem_type: "Addition Tens Fact", grade: "1st")
+
+Problem.create(number_sentence: "6 + 8 =", problem_type: "Addition Inside-Doubles Fact", grade: "1st")
+Problem.create(number_sentence: "7 + 9 =", problem_type: "Addition Inside-Doubles Fact", grade: "1st")
+Problem.create(number_sentence: "8 + 10 =", problem_type: "Addition Inside-Doubles Fact", grade: "1st")
+Problem.create(number_sentence: "9 + 11 =", problem_type: "Addition Inside-Doubles Fact", grade: "1st")
 
 Problem.create(number_sentence: "20 - 14 =", problem_type: "Subtraction Tens Fact", grade: "2nd")
 Problem.create(number_sentence: "20 - 13 =", problem_type: "Subtraction Tens Fact", grade: "2nd")
@@ -109,12 +105,30 @@ Problem.create(number_sentence: "6 + 14 =", problem_type: "Addition Tens Fact", 
 Problem.create(number_sentence: "7 + 13 =", problem_type: "Addition Tens Fact", grade: "2nd")
 Problem.create(number_sentence: "8 + 12 =", problem_type: "Addition Tens Fact", grade: "2nd")
 
-Problem.create(number_sentence: "6 + 8 =", problem_type: "Addition Inside-Doubles Fact", grade: "1st")
-Problem.create(number_sentence: "7 + 9 =", problem_type: "Addition Inside-Doubles Fact", grade: "1st")
-Problem.create(number_sentence: "8 + 10 =", problem_type: "Addition Inside-Doubles Fact", grade: "1st")
-Problem.create(number_sentence: "9 + 11 =", problem_type: "Addition Inside-Doubles Fact", grade: "1st")
-
 Problem.create(number_sentence: "11 + 13 =", problem_type: "Addition Inside-Doubles Fact", grade: "2nd")
 Problem.create(number_sentence: "12 + 14 =", problem_type: "Addition Inside-Doubles Fact", grade: "2nd")
 Problem.create(number_sentence: "13 + 15 =", problem_type: "Addition Inside-Doubles Fact", grade: "2nd")
 Problem.create(number_sentence: "14 + 16 =", problem_type: "Addition Inside-Doubles Fact", grade: "2nd")
+
+Problem.create(number_sentence: "11 - 8 =", problem_type: "Subtraction", grade: "2nd")
+Problem.create(number_sentence: "13 - 8 =", problem_type: "Subtraction", grade: "2nd")
+Problem.create(number_sentence: "14 - 9 =", problem_type: "Subtraction", grade: "2nd")
+Problem.create(number_sentence: "16 - 9 =", problem_type: "Subtraction", grade: "2nd")
+Problem.create(number_sentence: "17 - 8 =", problem_type: "Subtraction", grade: "2nd")
+
+Problem.create(number_sentence: "11 + 11 =", problem_type: "Addition Doubles Fact", grade: "2nd")
+Problem.create(number_sentence: "12 + 12 =", problem_type: "Addition Doubles Fact", grade: "2nd")
+Problem.create(number_sentence: "13 + 13 =", problem_type: "Addition Doubles Fact", grade: "2nd")
+Problem.create(number_sentence: "14 + 14 =", problem_type: "Addition Doubles Fact", grade: "2nd")
+Problem.create(number_sentence: "15 + 15 =", problem_type: "Addition Doubles Fact", grade: "2nd")
+
+Problem.create(number_sentence: "20 - 10 =", problem_type: "Subtraction Halving", grade: "2nd")
+Problem.create(number_sentence: "18 - 9 =", problem_type: "Subtraction Halving", grade: "2nd")
+Problem.create(number_sentence: "16 - 8 =", problem_type: "Subtraction Halving", grade: "2nd")
+Problem.create(number_sentence: "14 - 7 =", problem_type: "Subtraction Halving", grade: "2nd")
+Problem.create(number_sentence: "12 - 6 =", problem_type: "Subtraction Halving", grade: "2nd")
+
+Problem.create(number_sentence: "19 - 4 =", problem_type: "Subtraction", grade: "2nd")
+Problem.create(number_sentence: "19 - 6 =", problem_type: "Subtraction", grade: "2nd")
+Problem.create(number_sentence: "19 - 7 =", problem_type: "Subtraction", grade: "2nd")
+Problem.create(number_sentence: "19 - 8 =", problem_type: "Subtraction", grade: "2nd")
