@@ -5,6 +5,7 @@ class CreateGames < ActiveRecord::Migration[5.2]
       t.integer :score
       t.integer :time_remaining
       t.string :game_type
+      t.string :number_sentences
 
 
       t.timestamps

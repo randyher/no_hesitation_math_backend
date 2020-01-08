@@ -9,7 +9,7 @@
 User.delete_all
 Game.delete_all
 Problem.delete_all
-Gamesproblem.delete_all
+
 
 ActiveRecord::Base.connection.tables.each do |t|
   ActiveRecord::Base.connection.reset_pk_sequence!(t)
